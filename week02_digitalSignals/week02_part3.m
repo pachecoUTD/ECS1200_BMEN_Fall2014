@@ -1,17 +1,18 @@
 clear all
 
-% Part 3
+% Week 2, Part 3
 
-% Decrease this dx parameter until you can properly recognize the signal
-dx = 2;
+% Sampling rate in Hz (number samples per second)
+sample_rate_Hz = 4; 
 
-x1 = 0 : dx : 6*pi;
-y1 = 2.5 + 2.5*sin(x1);
+% time between samples: delta-time or dt = 1/sampling rate
+dt = 1/sample_rate_Hz;
+
+t = 0 : dt : 1;
+y = mystery_function(t);
 
 figure(2);clf;
-plot(x1, y1, 'bo-');
-
-
-
+plot(t, y, 'bo-');
+xlabel('Time (sec)');
 
 
