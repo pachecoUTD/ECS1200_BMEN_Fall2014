@@ -12,10 +12,11 @@ powers2 = [32 16 8 4 2 1];
 number = 26;
 
 % store the digits of the binary number in a vector named 'bits'
+testNumber = 0;
 for k = 1:6, 
-    if %[replace this here with the appropriate comparison]
+    if number >= ???
         bits(k) = 1;
-        number = %[add code here that modifies number appropriately]
+        testNumber = ???;
     else
         bits(k) = 0;
     end
