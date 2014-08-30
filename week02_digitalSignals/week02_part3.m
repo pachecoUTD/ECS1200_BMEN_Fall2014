@@ -8,7 +8,7 @@ sample_rate_Hz = 4;
 % time between samples: delta-time or dt = 1/sampling rate
 dt = 1/sample_rate_Hz;
 
-t = 0 : dt : 1;
+t = 0 : dt : 2;
 y = mystery_function(t);
 
 figure(2);clf;
